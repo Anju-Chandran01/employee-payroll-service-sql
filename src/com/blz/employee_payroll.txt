@@ -46,4 +46,14 @@ mysql>insert into employee_payroll(Name, Salary,StartDate) values ('Amaya', 5000
 Query OK, 3 rows affected (0.29 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
+mysql>SELECT * FROM employee_payroll;
++----+---------+--------+------------+
+| ID | Name    | Salary | StartDate  |
++----+---------+--------+------------+
+|  1 | Amaya   |  50000 | 2004-09-04 |
+|  2 | Arya    |  25000 | 2012-02-11 |
+|  3 | Aadhi   |  40000 | 2018-07-11 |
++----+---------+--------+------------+
+3 rows in set (0.00 sec)
+
 mysql>
