@@ -73,4 +73,24 @@ mysql> SELECT * FROM employee_payroll WHERE StartDate BETWEEN CAST('2012-02-11' 
 +----+---------+--------+------------+
 2 rows in set (0.17 sec)
 
-mysql>
+mysql> UPDATE employee_payroll set gender = 'F' where name = 'Amaya';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE employee_payroll set gender = 'F' where name = 'Arya';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE employee_payroll set gender = 'F' where name = 'Aadhi';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employee_payroll_service;
++----+---------+--------+----------+------------+
+| ID | Name    | gender | Salary   | Start      |
++----+---------+--------+----------+------------+
+|  1 | Amaya   | F      |  50000   | 2004-09-04 |
+|  2 | Arya    | F      |  25000   | 2012-02-11 |
+|  3 | Aadhi   | F      |  40000   | 2018-07-11 |
++----+---------+--------+----------+------------+
+3 rows in set (0.01 sec)
